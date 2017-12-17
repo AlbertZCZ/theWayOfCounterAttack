@@ -3,5 +3,5 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
 
-    <bean id="messageService" class="com.attack.spring.service.MessageServiceImp"/>
+    <bean id="messageService" class="counter.attack.spring.service.MessageServiceImp"/>
 </beans>
