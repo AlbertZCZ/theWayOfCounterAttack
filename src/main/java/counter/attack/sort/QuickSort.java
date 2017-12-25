@@ -28,7 +28,7 @@ public class QuickSort {
         for (int i = start; i < end; i++) {
             if (arr[i] < base) {
                 //将小于基准元素的放到基准的左边
-                if (i != n)
+                if (i != n)//i与n相等就没必要交换位置
                     exchangeE(arr, i, n);
                 n++;
             }
@@ -69,7 +69,7 @@ public class QuickSort {
             recurPartiton(arr,part+1,end);
         else if(part ==end)
             recurPartiton(arr,start,end-1);
-        else{
+        else {
             recurPartiton(arr,start,part-1);
             recurPartiton(arr,part+1,end);
         }
