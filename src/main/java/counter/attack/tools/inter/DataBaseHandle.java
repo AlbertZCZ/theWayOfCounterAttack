@@ -2,7 +2,6 @@ package counter.attack.tools.inter;
 
 import com.sun.rowset.CachedRowSetImpl;
 import net.sf.json.JSONObject;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 
