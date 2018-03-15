@@ -1,0 +1,17 @@
+linux 安装 Headless Chrome
+公司的selenium爬虫项目要从windows平台迁移到linux平台，所以要用到headless chrome，在此记录一下安装过程：
+1.下载安装chromedriver
+  mkdir chrome
+  cd chrome
+  wget https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip 
+  unzip chromedriver_linux64.zip 
+  cd 
+  vi .bashrc #添加环境变量
+  export PATH=/home/username/chrome:$PATH #在最后一行添加后保存退出
+  source ~/.bashrc #立即生效
+2.下载安装chrome
+  wget https://dl.lancdn.com/landian/software/chrome/m/60.0.3112.90_amd64.deb #下载chrome安装包
+  sudo apt-get -f -y install #安装deb包时解决依赖安装问题
+  sudo dpkg -i 60.0.3112.90_amd64.deb #安装deb包
+  
+ 终端中可执行操作详见：http://web.jobbole.com/91489/
